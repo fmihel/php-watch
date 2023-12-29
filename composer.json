@@ -1,0 +1,22 @@
+{
+    "name": "fmihel/php-watch",
+    "description": "watch changes in files",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "fmihel",
+            "email": "fmihel76@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "fmihel\\watch\\": "source"
+        }
+    },
+    "require": {
+        "fmihel/php-config": "^0.1.2",
+        "fmihel/php-lib": "^4.1",
+        "react/event-loop": "^1.4.0"
+    }
+}
