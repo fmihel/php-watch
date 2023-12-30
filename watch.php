@@ -1,14 +1,10 @@
 <?php
 
 use fmihel\config\Config;
-use fmihel\console;
-use fmihel\lib\Dir;
 use fmihel\watch\Watcher;
 
-require_once __DIR__ . '/../../../autoload.php';
-require_once __DIR__.'/Watcher.php';
-
-
+require_once __DIR__ . '/../../autoload.php';
+require_once __DIR__.'/source/Watcher.php';
 
 $pwd = getcwd().'/';
 $configName = count($argv)>1 ? $argv[1] : $pwd.'watcher.config.php';
@@ -29,11 +25,11 @@ $watcher->watch(function() use ($exec) {
         exec($exec, $ret);
         foreach ($ret as $line) {
             print $line . "\n";
-          }
+        }
     }else{
         print 'change..'."\n";
     }
- },$interval,$limit);
+},$interval,$limit);
 
 
 
