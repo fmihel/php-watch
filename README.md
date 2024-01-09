@@ -12,6 +12,10 @@ composer require fmihel/php-watch
 $config=[
     'paths'=>['./tests/server/'],
     'exec'=>'./vendor/bin/phpunit --verbose tests/server'
+    // Alert!! --------------------
+    // on WINDOWS use absolute path
+    //'exec'=>'c:/work/project/vendor/bin/phpunit --verbose tests/server'
+    // ----------------------------
 ];    
 ```
 #### 2. Запустить скрипт 
