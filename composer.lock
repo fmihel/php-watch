@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "aa9e5c83094a10d369052731d8a3db6b",
+    "content-hash": "3d5da37e9983cbe35673a42c34e07d7d",
     "packages": [
         {
             "name": "fmihel/php-config",
@@ -49,16 +49,16 @@
         },
         {
             "name": "fmihel/php-lib",
-            "version": "v4.1.0",
+            "version": "v5.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/fmihel/php-lib.git",
-                "reference": "136c914392b7d639f6d8a578e884097a88c9cd74"
+                "reference": "9776341db68810ae9e17e8898c99f2b63b7ef979"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/fmihel/php-lib/zipball/136c914392b7d639f6d8a578e884097a88c9cd74",
-                "reference": "136c914392b7d639f6d8a578e884097a88c9cd74",
+                "url": "https://api.github.com/repos/fmihel/php-lib/zipball/9776341db68810ae9e17e8898c99f2b63b7ef979",
+                "reference": "9776341db68810ae9e17e8898c99f2b63b7ef979",
                 "shasum": ""
             },
             "require-dev": {
@@ -84,9 +84,9 @@
             "description": "php,lib,library",
             "support": {
                 "issues": "https://github.com/fmihel/php-lib/issues",
-                "source": "https://github.com/fmihel/php-lib/tree/v4.1.0"
+                "source": "https://github.com/fmihel/php-lib/tree/v5.0.0"
             },
-            "time": "2023-10-10T06:17:44+00:00"
+            "time": "2024-01-11T13:20:19+00:00"
         },
         {
             "name": "react/event-loop",
@@ -169,5 +169,5 @@
     "prefer-lowest": false,
     "platform": [],
     "platform-dev": [],
-    "plugin-api-version": "2.3.0"
+    "plugin-api-version": "2.2.0"
 }

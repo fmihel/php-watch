@@ -2,6 +2,7 @@
 namespace fmihel\watch;
 
 use fmihel\lib\Dir;
+use fmihel\lib\System;
 use React\EventLoop\Loop;
 
 class Watcher
@@ -19,7 +20,7 @@ class Watcher
     {
         $out = [];
         foreach ($this->paths as $path) {
-            $files = Dir::files($path, 'php', true, false);
+            $files = Dir::files($path, ['php'], true, false);
             foreach ($files as $file) {
                 $out[] = ['file' => $file, 't' => self::hashsum($file)];
             }
@@ -73,14 +74,9 @@ class Watcher
 
     }
 
-    public static function is_win(): bool
-    {
-        return strtoupper(substr(PHP_OS, 0, 3)) === 'WIN';
-    }
-
     private static function hashsum(string $filename)
     {
-        if (self::is_win()) {
+        if (System::is_win()) {
             return md5_file($filename);
         } else {
             return filemtime($filename);

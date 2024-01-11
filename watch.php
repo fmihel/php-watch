@@ -1,12 +1,13 @@
 <?php
 
 use fmihel\config\Config;
+use fmihel\lib\System;
 use fmihel\watch\Watcher;
 
 require_once __DIR__ . '/../../autoload.php';
 require_once __DIR__ . '/source/Watcher.php';
 
-$SEP = Watcher::is_win() ? '\\' : '/';
+$SEP = System::is_win() ? '\\' : '/';
 
 $pwd = getcwd() . $SEP;
 $configName = count($argv) > 1 ? $argv[1] : $pwd . 'watch.config.php';
@@ -16,7 +17,7 @@ if (file_exists($configName)) {
 }
 
 $paths = Config::get('paths', [$pwd]);
-if (Watcher::is_win()) {
+if (System::is_win()) {
     $abs = [];
     foreach ($paths as $path) {
         $abs[] = realpath($path) . $SEP;
