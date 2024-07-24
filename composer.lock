@@ -4,20 +4,20 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "3d5da37e9983cbe35673a42c34e07d7d",
+    "content-hash": "8f2bc2e4652948868445aa74bda6ab81",
     "packages": [
         {
             "name": "fmihel/php-config",
-            "version": "v0.1.2",
+            "version": "v1.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/fmihel/php-config.git",
-                "reference": "e128bfa62d735b27c7185cb35a002226e6472a9b"
+                "reference": "6aa8ac9a47d09f63db8ef56556bb010f29bccd48"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/fmihel/php-config/zipball/e128bfa62d735b27c7185cb35a002226e6472a9b",
-                "reference": "e128bfa62d735b27c7185cb35a002226e6472a9b",
+                "url": "https://api.github.com/repos/fmihel/php-config/zipball/6aa8ac9a47d09f63db8ef56556bb010f29bccd48",
+                "reference": "6aa8ac9a47d09f63db8ef56556bb010f29bccd48",
                 "shasum": ""
             },
             "require-dev": {
@@ -43,9 +43,9 @@
             "description": "php config loader",
             "support": {
                 "issues": "https://github.com/fmihel/php-config/issues",
-                "source": "https://github.com/fmihel/php-config/tree/v0.1.2"
+                "source": "https://github.com/fmihel/php-config/tree/v1.0.0"
             },
-            "time": "2023-09-03T10:59:24+00:00"
+            "time": "2024-07-24T07:15:38+00:00"
         },
         {
             "name": "fmihel/php-lib",
